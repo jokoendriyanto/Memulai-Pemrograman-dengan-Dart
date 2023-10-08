@@ -24,4 +24,24 @@ void main() {
   /*
   Backslash sebelum tanda petik ini akan mengatakan kepada Dart bahwa itu hanyalah tanda petik dan tidak boleh ditafsirkan sebagai pembatas string. Selain tanda petik, backslash juga berguna untuk mengabaikan simbol lain yang menimbulkan ambigu di dalam string, contohnya seperti backslash itu sendiri.
   */
+
+  /*
+Fitur lain dari String adalah String interpolation di mana kita bisa memasukkan nilai dari variabel atau expression ke dalam string. Interpolation ini bisa kita terapkan dengan simbol $.
+  */
+  var name = 'Messi';
+  print('Hello $name, nice to meet you.');
+  print('1 + 1 = ${1 + 1}');
+
+  /*
+  Huruf ‘r’ sebelum String akan memberitahu Dart untuk menganggap String sebagai raw, yang berarti akan mengabaikan interpolation.
+  */
+  print(r'Dia baru saja membeli komputer seharga $1,000.00');
+
+  /*
+  Selain itu, kita juga bisa menambahkan sebuah Unicode ke dalam String. Pada Dart Unicode ini dikenal dengan runes. Unicode mendefinisikan nilai numerik unik untuk setiap huruf, angka, dan simbol yang digunakan dalam semua sistem penulisan dunia. Cara umum untuk mengekspresikan unicode adalah \uXXXX, di mana XXXX adalah nilai heksadesimal 4 digit. Misalnya karakter hati (♥)
+  */
+
+  print('Hi \u2665');
+
+  //referensi => https://dart.dev/language/built-in-types#strings
 }
